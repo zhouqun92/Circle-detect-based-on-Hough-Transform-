@@ -6,6 +6,8 @@
 //rmax:Maximum radius
 //sensitivity:Larger is easier to detect a circle ,range(0-1)
 //edgeThresh:The gradient threshold,range(0-1)
+//just detect one of the circle with the highest score,the circle must Brighter than the background.Otherwise you can reverse the image 
+//by 255-img if the img is grayscale
 void main()
 {
 	Mat img = imread("2.jpg");
